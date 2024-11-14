@@ -17,10 +17,12 @@
 }
 
 .img-logo {
-  width: 120px;
+  position: absolute;
+  width: 100px;
   margin-left: 25px;
   cursor: pointer;
   padding: 4px;
+  left: -20px;
 }
 
 .img-logo:hover, .cart-div:hover {
@@ -41,23 +43,28 @@
 .input-search {
   font-size: 18px;
   padding: 10px 10px;
-  padding-right: 650px;
+  padding-right: 25pc;
   align-content: center;
   border-radius: 7px;
-  display: inline-block;
   border: 1px solid goldenrod;
   border-radius: 9px;
+}
+
+@media (width< 1100px) {
+  .input-search {
+    padding-right: 10pc;
+  }
+}
+
+@media (width< 900px) {
+  .input-search {
+    padding: 10px 10px;
+  }
 }
 
 .search-div {
   position: relative;
 }
-
-/*.search-btn {
-  background-color: goldenrod;
-  border: none;
-  border-radius: 0px 7px 7px 0px;
-}*/
 
 .search-btn img {
   width: 26px;
@@ -72,17 +79,14 @@
 
 .cart-div {
   display: inline-block;
+  margin-right: 10px;
+  padding: 8px;
 }
 
 .cart-icon {
   display: inline-block;
   position: relative;
   cursor: pointer;
-}
-
-.cart-div {
-  margin-right: 10px;
-  padding: 8px;
 }
 
 .cart-icon div {
@@ -99,4 +103,73 @@
   font-size: 15px;
   font-weight: bold;
   padding-right: 20px;
+}
+
+.hidden-img {
+  position: relative;
+  visibility: hidden;
+  width: 30px;
+}
+
+@media (width < 450px) {
+  .header-container {
+    height: 60px;
+  }
+  
+  .img-logo {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .hidden-img {
+    visibility: visible;
+  }
+
+  .input-search {
+    padding: 5px;
+    font-size: 18px;
+    width: 170px;
+  }
+
+  .search-btn img {
+    width: 16px;
+    right: 18px;
+    top: 0;
+  }
+
+  .hsec3 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .hsec3 div {
+    align-self: center;
+    font-size: 10px;
+  }
+
+  .hsec3 p {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .cart-div {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .cart-icon {
+    width: 10px;
+  }
+
+  .cart-icon div {
+    font-size: 15px;
+    font-weight: bold;
+    top: 2px;
+    right: -25px;
+  }
+
+  .cart-title {
+    visibility: hidden;
+  }
 }

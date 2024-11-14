@@ -1,0 +1,12 @@
+body {
+  color: white;
+  font-family: Roboto, arial;
+}
+
+main {
+  color: black;
+}
+
+main img {
+  width: 100%;
+}

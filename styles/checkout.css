@@ -1,0 +1,220 @@
+body {
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (width < 1300px) {
+  body {
+    margin: 0;
+  }
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  height: 80px;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  right: 100px;
+  left: 140px;
+  background-color: whitesmoke;
+  z-index: 100;
+}
+
+.div1 {
+  width: 50px;
+}
+
+.div1 img {
+  width: 250%;
+}
+
+.cart-quantity {
+  margin-left: 1px;
+}
+
+.div2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.div3 {
+  margin-right: 50px;
+}
+
+/* Body Styles Starts */
+
+.cart-review {
+  margin-top: 150px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.cart-container {
+  margin-top: 10px;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 1000;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+}
+
+.checkout-container {
+  height: max-content;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+}
+
+.delivery-date {
+  font-size: 23px;
+  color: green;
+  font-weight: bold;
+}
+
+.product-image {
+  display: inline;
+  width: 100%;
+}
+
+.product-image img {
+  margin-top: 10px;
+  width: 80%;
+  
+}
+
+.product-details-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr;
+  margin-top: 10px;
+}
+
+.product-details div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-price {
+  color: brown;
+  font-weight: bold;
+}
+
+.product-quantity {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.product-quantity span {
+  color: darkslategrey;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color:cadetblue;
+  margin-right: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a:hover {
+  color: lightcoral;
+}
+
+.delivery-option-container {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.delivery-options {
+  margin-top: 6px;
+  color: green;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+[type = 'radio'] {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+span {
+  color: lightslategrey;
+  margin-left: 30px;
+  font-weight: lighter;
+}
+
+.checkout-details {
+  width: 350px; 
+  font-size: 18px;
+  margin: 10px;
+}
+
+.order-summary {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.checkout-details div {
+  padding: 3px;
+}
+
+.checkout-div1, .checkout-div2, .checkout-div3, .checkout-div4, .checkout-div5 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  font-size: 17px;
+  color: rgb(34, 32, 32);
+}
+
+.payment-method {
+  margin-left: 6px;
+}
+
+.checkout-div2, .checkout-div4 {
+  margin-bottom: 12px;
+}
+
+.checkout-div5 {
+  font-size: 20px;
+  color: brown;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.order-button {
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: gold;
+}
+
+.order-button:hover {
+  background-color: rgb(230, 197, 12);
+}

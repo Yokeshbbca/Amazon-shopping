@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles/checkout.css">
+</head>
+<body>
+  <header>
+    <div class="div1">
+      <a href="amazon.html">
+        <img src="images/amazon-logo1-white.png" >
+      </a>
+    </div>
+    <div class="div2">Checkout (<span class="cart-quantity js-cart-quantity">
+      <span style="margin: 0;" class="js-cart-checkout-quantity">0</span> items </span>)</div>
+    <div class="div3">
+      <img src="images/checkout-lock-icon.png">
+    </div>
+  </header>
+  <main>
+    <div class="cart-review">Review your order</div>
+    <div class="main-container">
+   
+      <div class="js-cart-container">
+        
+      </div>
+
+
+      <div class="checkout-container js-checkout-container">
+        <div class="checkout-details">
+          <div class="order-summary">Order Summary</div>
+          <div class="checkout-div1">
+            <div>Items (1): </div> <div>$20.99</div>
+          </div>
+          <div class="checkout-div2">
+            <div>Shipping & handling:</div> <div>$9.99</div>
+          </div>
+          <div class="checkout-div3">
+            <div>Total before Tax:</div> <div>$30.94</div>
+          </div>
+          <div class="checkout-div4">
+            <div>Estimated Tax (10%):</div> <div>$3.09</div>
+          </div>
+          <div class="checkout-div5">
+            <div>Order Total:</div> <div>$34.03</div>
+          </div>
+          <div class="payment-method">Use PayPal<input type="checkbox"></div>
+          <button class="order-button">Place your Order</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script type="module" src="scripts/checkout.js"></script>
+</body>
+</html>

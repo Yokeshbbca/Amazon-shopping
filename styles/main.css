@@ -25,10 +25,17 @@
   }
 }
 
-@media (width < 750px) {
+@media (width < 800px) {
   .product-container {
     display: grid;
     grid-template-columns: auto auto;
+  }
+}
+
+@media (width < 450px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: auto;
   }
 }
 

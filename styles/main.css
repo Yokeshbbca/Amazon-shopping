@@ -4,17 +4,11 @@
   column-gap: 10px;
   margin-top: 70px;
 }
-@media (width < 1380px) {
-  .product-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-  }
-}
 
 @media (width < 1200px) {
   .product-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
   }
 }
 

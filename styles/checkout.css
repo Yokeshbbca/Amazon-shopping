@@ -6,20 +6,20 @@ body {
 
 @media (width < 1300px) {
   body {
-    margin: 0;
+    margin: 10px;
   }
 }
 
 header {
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 80px;
   position: fixed;
   align-items: center;
   top: 0;
-  right: 100px;
-  left: 140px;
+  right: 0;
+  left: 0;
   background-color: whitesmoke;
   z-index: 100;
 }
@@ -190,6 +190,26 @@ span {
 
 .payment-method {
   margin-left: 6px;
+}
+
+
+@media (width < 1070px) {
+  .main-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .checkout-container {
+    width: 38%;
+    margin-left: 27%;
+  }
+
+  .product-details-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr;
+    margin-top: 10px;
+  }
 }
 
 .checkout-div2, .checkout-div4 {
